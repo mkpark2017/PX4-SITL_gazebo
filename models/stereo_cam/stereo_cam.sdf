@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="stereo_camera">
+  <model name="stereo_cam">
     <pose>0 0 0.035 0 0 0</pose>
     <link name="link">
       <inertial>
@@ -18,7 +18,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://stereo_camera/meshes/realsense.dae</uri>
+            <uri>model://stereo_cam/meshes/realsense.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -29,7 +29,7 @@
           </box>
         </geometry>
       </collision>
-      <sensor type="multicamera" name="stereo_camera">
+      <sensor type="multicamera" name="stereo_cam">
         <update_rate>20.0</update_rate>
         <camera name="left">
           <horizontal_fov>1.3962634</horizontal_fov>
